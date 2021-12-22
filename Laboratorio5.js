@@ -31,9 +31,9 @@ const carrito = [
 var mostrarCarrito = (soloPremium) => {
     document.write("<h3>carrito:</h3>");
     document.write("<ul>");
-    for (i of carrito) {
-        if (!(soloPremium && !i.premium)) {
-            mostrarArticulo(i);
+    for (valor of carrito) {
+        if (!(soloPremium && !valor.premium)) {
+            mostrarArticulo(valor);
         }
     };
     document.write("</ul>");
@@ -46,9 +46,9 @@ var mostrarArticulo = (articulo) => {
 };
 var mostrarPrecio = (soloPremium) => {
     var precioTotal = 0;
-    for (i of carrito) {
-        if (!(soloPremium && !i.premium)) {
-            precioTotal += i.price * i.count;
+    for (valor of carrito) {
+        if (!(soloPremium && !valor.premium)) {
+            precioTotal += valor.price * valor.count;
         }
     }
     if (precioTotal > 100) {
@@ -92,7 +92,7 @@ var eliminarArticuloById = (articuloId) => {
 };
 //------- main ----------
 document.write("<h2>Apartado 1: mostrar el carrito (completo)</h2>");
-mostrarCarrito(false);
+mostrarCarrito();
 document.write("<br>");
 document.write("<h2>Apartado 2: mostrar el carrito (solo premium)</h2>");
 mostrarCarrito(true);
