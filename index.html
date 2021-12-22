@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Laboratorio 4 - Extra 2</title>
+    <link rel="stylesheet" href="site.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="section">
+            <div>
+                <div class="element">
+                    <label for="roomType"><b>Room type</b></label>
+                    <select id="roomType" name="roomType">
+                        <option value="roomType1" selected>Standard</option>
+                        <option value="roomType2">Junior suite</option>
+                        <option value="roomType3">Suite</option>
+                    </select>
+                </div>
+                <div class="element">
+                    <input type="checkbox" id="spaSelect" name="spaSelect" value="spaSelectVal" />
+                    <label for="spaSelect"><b>SPA</b></label>
+                </div>
+            </div>
+            <div>
+                <label for="roomSize"><b>Room size</b></label>
+                <select id="roomSize" name="roomSize">
+                    <option value="roomSize1" selected>Single</option>
+                    <option value="roomSize2">Double</option>
+                    <option value="roomSize3">Triple</option>
+                </select>
+            </div>
+            <div>
+                <div class="element">
+                    <label for="nights"><b>Nights</b></label>
+                    <input type="number" id="nights" name="nights" />
+                </div>
+                <div class="element">
+                    <label for="parkingNights"><b>Parking nights</b></label>
+                    <input type="number" id="parkingNights" name="parkingNights" />
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2 id="precio">Precio: 0.00€</h2>
+        </div>
+    </div>
+    <script src="Laboratorio4_x2.js"></script>
+</body>
+
+</html>
