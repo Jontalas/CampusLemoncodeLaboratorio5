@@ -51,7 +51,7 @@ var mostrarPrecio = (soloPremium) => {
             precioTotal += valor.price * valor.count;
         }
     }
-    if (precioTotal > 100) {
+    if (precioTotal > 50) {
         document.write("<p>Precio total: " + (Number(precioTotal) * 0.95).toFixed(2) + "€. (Precio sin descuento: " + Number(precioTotal).toFixed(2) + "€) </p>");
     }
     else {
