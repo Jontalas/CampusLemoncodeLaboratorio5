@@ -42,6 +42,7 @@ var mostrarCarrito = (soloPremium) => {
 }
 var mostrarArticulo = (articulo) => {
     document.write("<li>" + articulo.name + " (id: " + articulo.id + ", precio: " + Number(articulo.price).toFixed(2) + "€, cantidad: " + articulo.count + ", premium: " + (articulo.premium ? "si" : "no") + ")</li>");
+
 };
 var mostrarPrecio = (soloPremium) => {
     var precioTotal = 0;
